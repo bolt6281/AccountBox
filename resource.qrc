@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/24x24/cil-menu.png</file>
+    <file>icons/16x16/cil-check-alt.png</file>
+    <file>icons/16x16/cil-folder-open.png</file>
+    <file>icons/16x16/cil-home.png</file>
+    <file>icons/16x16/cil-magnifying-glass.png</file>
+    <file>icons/16x16/cil-menu.png</file>
+    <file>icons/16x16/cil-pencil.png</file>
+    <file>icons/16x16/cil-settings.png</file>
+    <file>icons/16x16/cil-size-grip.png</file>
+    <file>icons/16x16/cil-window-maximize.png</file>
+    <file>icons/16x16/cil-window-minimize.png</file>
+    <file>icons/16x16/cil-window-restore.png</file>
+    <file>icons/16x16/cil-x.png</file>
+  </qresource>
+</RCC>
