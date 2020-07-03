@@ -1261,6 +1261,25 @@ QPushButton:pressed {
                  <widget class="QFrame" name="frame_label_top_btns">
                   <layout class="QHBoxLayout">
                    <item>
+                    <widget class="QLabel" name="label">
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap resource="resource.qrc">:/icons/icons/16x16/favicon (1).ico</pixmap>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
                     <widget class="QLabel" name="label_title_bar_top">
                      <property name="font">
                       <font>
@@ -1859,7 +1878,7 @@ padding-left:5px;
                  <number>0</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>25</number>
                 </property>
                </layout>
               </widget>
@@ -2964,6 +2983,28 @@ retrieve them with no anxiety of exposure</string>
                       </property>
                      </widget>
                     </item>
+                    <item>
+                     <widget class="QLabel" name="label_first_time">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>11</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>At first, press 'restore' button at Setting</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
                    </layout>
                   </widget>
                   <widget class="QWidget" name="page_add">
@@ -3014,6 +3055,141 @@ QLineEdit:focus {
 }</string>
                       </property>
                       <layout class="QGridLayout" name="gridLayout_3">
+                       <item row="3" column="1">
+                        <widget class="QPushButton" name="pushButton_add">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Add</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_add_password">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit {
+	background-color: rgb(27, 29, 35);
+	border-radius: 10px;
+	border: 2px solid rgb(34, 36, 43);
+	padding-left: 10px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(64, 71, 88);
+}
+QLineEdit:focus {
+	border: 3px solid rgb(91, 101, 124);
+}</string>
+                         </property>
+                         <property name="placeholderText">
+                          <string>Password</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_add_name">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>15</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">c</string>
+                         </property>
+                         <property name="text">
+                          <string>Service name</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="margin">
+                          <number>20</number>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_add_id">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>15</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>ID</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="margin">
+                          <number>20</number>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_add_id">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit {
+	background-color: rgb(27, 29, 35);
+	border-radius: 10px;
+	border: 2px solid rgb(34, 36, 43);
+	padding-left: 10px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(64, 71, 88);
+}
+QLineEdit:focus {
+	border: 3px solid rgb(91, 101, 124);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="placeholderText">
+                          <string>ID</string>
+                         </property>
+                        </widget>
+                       </item>
                        <item row="2" column="0">
                         <widget class="QLabel" name="label_add_password">
                          <property name="font">
@@ -3092,141 +3268,6 @@ QLineEdit:focus {
                          </property>
                          <property name="text">
                           <string>Show password</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="0">
-                        <widget class="QLabel" name="label_add_id">
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>15</pointsize>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>ID</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                         <property name="margin">
-                          <number>20</number>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="1">
-                        <widget class="QLineEdit" name="lineEdit_add_id">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>50</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QLineEdit {
-	background-color: rgb(27, 29, 35);
-	border-radius: 10px;
-	border: 2px solid rgb(34, 36, 43);
-	padding-left: 10px;
-}
-QLineEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
-}
-QLineEdit:focus {
-	border: 3px solid rgb(91, 101, 124);
-}</string>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                         <property name="placeholderText">
-                          <string>ID</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QPushButton" name="pushButton_add">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>50</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Add</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="1">
-                        <widget class="QLineEdit" name="lineEdit_add_password">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>50</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QLineEdit {
-	background-color: rgb(27, 29, 35);
-	border-radius: 10px;
-	border: 2px solid rgb(34, 36, 43);
-	padding-left: 10px;
-}
-QLineEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
-}
-QLineEdit:focus {
-	border: 3px solid rgb(91, 101, 124);
-}</string>
-                         </property>
-                         <property name="placeholderText">
-                          <string>Password</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0">
-                        <widget class="QLabel" name="label_add_name">
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>15</pointsize>
-                          </font>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">c</string>
-                         </property>
-                         <property name="text">
-                          <string>Service name</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                         <property name="margin">
-                          <number>20</number>
                          </property>
                         </widget>
                        </item>
@@ -3447,7 +3488,7 @@ QLineEdit:focus {
                         <height>16777215</height>
                        </size>
                       </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_9">
+                      <layout class="QVBoxLayout" name="verticalLayout_scrollContents">
                        <property name="spacing">
                         <number>0</number>
                        </property>
@@ -3685,7 +3726,7 @@ page_specific{\nborder-radius : 7px;\n	border: 3px solid rgb(34, 36, 43);\n}
 }</string>
                       </property>
                       <property name="currentIndex">
-                       <number>1</number>
+                       <number>0</number>
                       </property>
                       <widget class="QWidget" name="page_guide">
                        <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -3834,13 +3875,16 @@ and click it to retrieve!</string>
                              <property name="text">
                               <string>password(******)</string>
                              </property>
+                             <property name="margin">
+                              <number>0</number>
+                             </property>
                             </widget>
                            </item>
                            <item row="6" column="2">
-                            <widget class="QCheckBox" name="checkBox_show">
+                            <widget class="QCheckBox" name="checkBox_retrieve_show">
                              <property name="maximumSize">
                               <size>
-                               <width>120</width>
+                               <width>70</width>
                                <height>30</height>
                               </size>
                              </property>
@@ -3848,7 +3892,7 @@ and click it to retrieve!</string>
                               <string>have a look around before click this</string>
                              </property>
                              <property name="text">
-                              <string>Show password</string>
+                              <string>Show</string>
                              </property>
                             </widget>
                            </item>
@@ -4106,51 +4150,63 @@ clipboard</string>
                            <property name="verticalSpacing">
                             <number>0</number>
                            </property>
-                           <item row="0" column="2">
-                            <widget class="QLineEdit" name="lineEdit_edit_id">
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_edit_id">
                              <property name="minimumSize">
                               <size>
-                               <width>0</width>
+                               <width>80</width>
                                <height>40</height>
                               </size>
                              </property>
                              <property name="maximumSize">
                               <size>
-                               <width>16777215</width>
+                               <width>80</width>
                                <height>40</height>
                               </size>
                              </property>
                              <property name="font">
                               <font>
                                <family>Segoe UI</family>
-                               <pointsize>-1</pointsize>
+                               <pointsize>12</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
                               </font>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">
-
-QLineEdit {
-	background-color: rgb(27, 29, 35);
-	border-radius: 3px;
-	border: 2px solid rgb(34, 36, 43);
-	padding-left: 10px;
-	font-size : 15px;
-}
-QLineEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
-}
-QLineEdit:focus {
-	border: 2px solid rgb(91, 101, 124);
-}</string>
+                              <string notr="true">border:None;</string>
                              </property>
                              <property name="text">
-                              <string/>
+                              <string>ID</string>
                              </property>
-                             <property name="maxLength">
-                              <number>20</number>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
                              </property>
-                             <property name="placeholderText">
-                              <string>New ID</string>
+                            </widget>
+                           </item>
+                           <item row="2" column="2" colspan="2">
+                            <widget class="QPushButton" name="pushButton_edit_save">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Segoe UI</family>
+                               <pointsize>12</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Save</string>
                              </property>
                             </widget>
                            </item>
@@ -4235,6 +4291,54 @@ QLineEdit:focus {
                              </property>
                             </widget>
                            </item>
+                           <item row="0" column="2">
+                            <widget class="QLineEdit" name="lineEdit_edit_id">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Segoe UI</family>
+                               <pointsize>-1</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">
+
+QLineEdit {
+	background-color: rgb(27, 29, 35);
+	border-radius: 3px;
+	border: 2px solid rgb(34, 36, 43);
+	padding-left: 10px;
+	font-size : 15px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(64, 71, 88);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="maxLength">
+                              <number>20</number>
+                             </property>
+                             <property name="placeholderText">
+                              <string>New ID</string>
+                             </property>
+                            </widget>
+                           </item>
                            <item row="1" column="4">
                             <widget class="QCheckBox" name="checkBox_edit_show">
                              <property name="minimumSize">
@@ -4254,66 +4358,6 @@ QLineEdit:focus {
                              </property>
                              <property name="text">
                               <string>Show</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="0" column="0">
-                            <widget class="QLabel" name="label_edit_id">
-                             <property name="minimumSize">
-                              <size>
-                               <width>80</width>
-                               <height>40</height>
-                              </size>
-                             </property>
-                             <property name="maximumSize">
-                              <size>
-                               <width>80</width>
-                               <height>40</height>
-                              </size>
-                             </property>
-                             <property name="font">
-                              <font>
-                               <family>Segoe UI</family>
-                               <pointsize>12</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
-                              </font>
-                             </property>
-                             <property name="styleSheet">
-                              <string notr="true">border:None;</string>
-                             </property>
-                             <property name="text">
-                              <string>ID</string>
-                             </property>
-                             <property name="alignment">
-                              <set>Qt::AlignCenter</set>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="2" column="2" colspan="2">
-                            <widget class="QPushButton" name="pushButton_edit_save">
-                             <property name="minimumSize">
-                              <size>
-                               <width>0</width>
-                               <height>35</height>
-                              </size>
-                             </property>
-                             <property name="maximumSize">
-                              <size>
-                               <width>16777215</width>
-                               <height>35</height>
-                              </size>
-                             </property>
-                             <property name="font">
-                              <font>
-                               <family>Segoe UI</family>
-                               <pointsize>12</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
-                              </font>
-                             </property>
-                             <property name="text">
-                              <string>Save</string>
                              </property>
                             </widget>
                            </item>
@@ -4434,6 +4478,43 @@ color:#c8c8c8;</string>
                          </property>
                          <property name="margin">
                           <number>9</number>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QPushButton" name="pushButton_restore">
+                         <property name="maximumSize">
+                          <size>
+                           <width>150</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>10</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+color:#c8c8c8;
+	border: 2px solid rgb(52, 59, 72);
+	border-radius: 5px;	
+	background-color: rgb(52, 59, 72);
+}
+QPushButton:hover {
+	background-color: rgb(57, 65, 80);
+	border: 2px solid rgb(61, 70, 86);
+}
+QPushButton:pressed {	
+	background-color: rgb(35, 40, 49);
+	border: 2px solid rgb(43, 50, 61);
+}
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Restore account data</string>
                          </property>
                         </widget>
                        </item>
