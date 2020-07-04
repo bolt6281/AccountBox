@@ -1,4 +1,5 @@
-import os
+# made by bolt6281
+
 import sys
 import platform
 
@@ -17,10 +18,8 @@ from ui_main import Ui_MainWindow
 from ui_styles import Style
 
 # IMPORT FUNCTIONS
-#from app_functions import *
-
-from functions import *
-
+from ui_functions import *
+from app_functions import *
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -94,7 +93,6 @@ class MainWindow(QMainWindow):
     
         # LOAD DEFINITIONS
         UIFunctions.uiDefinitions(self)
-        APPFunctions.appDefinitions(self)
 
         # show main window - end
         self.show()
@@ -114,20 +112,12 @@ class MainWindow(QMainWindow):
 
         # PAGE ADD
         if btnWidget.objectName() == "btn_add":
-             # remove what user wrote after save
-            self.ui.lineEdit_add_name.setText("")
-            self.ui.lineEdit_add_id.setText("")
-            self.ui.lineEdit_add_password.setText("")
-
             self.ui.stackedWidget.setCurrentWidget(self.ui.page_add)
             UIFunctions.resetStyle(self, "btn_add")
             UIFunctions.labelPage(self, "Add")
 
         # PAGE WIDGETS
         if btnWidget.objectName() == "btn_retrieve":
-
-            APPFunctions.restoreScrollArea(self, APPFunctions.get_account_data(self))
-            
             self.ui.stackedWidget.setCurrentWidget(self.ui.page_retrieve)
             UIFunctions.resetStyle(self, "btn_retrieve")
             UIFunctions.labelPage(self, "Retrieve N Manage")
@@ -143,29 +133,7 @@ class MainWindow(QMainWindow):
 
         btnWidget.setStyleSheet(UIFunctions.selectMenu(btnWidget.styleSheet()))
         
-    ##########################################################
-    # checkbox
-    ##########################################################
-    def show_password(self):
-        chbox = self.sender()
-        if "retrieve" in chbox.objectName():
-            if chbox.isChecked():
-                self.ui.label_password_2.setText((APPFunctions.returnPassword(self)))
-            else:
-                self.ui.label_password_2.setText("*" * len(APPFunctions.returnPassword(self)))
-
-        elif "add" in chbox.objectName():
-            if chbox.isChecked():
-                self.ui.lineEdit_add_password.setEchoMode(QLineEdit.Normal)
-            else:
-                self.ui.lineEdit_add_password.setEchoMode(QLineEdit.Password)
         
-        elif "edit" in chbox.objectName():
-            if chbox.isChecked():
-                self.ui.lineEdit_edit_password.setEchoMode(QLineEdit.Normal)
-            else:
-                self.ui.lineEdit_edit_password.setEchoMode(QLineEdit.Password)
-
 ## START ==> APP EVENTS
     ########################################################################
 

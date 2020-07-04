@@ -590,7 +590,7 @@ class Ui_MainWindow(object):
         self.frame_left_menu.setMaximumSize(QSize(70, 16777215))
         self.frame_left_menu.setLayoutDirection(Qt.LeftToRight)
         self.frame_left_menu.setAutoFillBackground(False)
-        self.frame_left_menu.setStyleSheet(u"background-color: rgb(27, 29, 35); padding-bottom:12;")
+        self.frame_left_menu.setStyleSheet(u"background-color: rgb(27, 29, 35);")
         self.verticalLayout_2 = QVBoxLayout(self.frame_left_menu)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -617,7 +617,6 @@ class Ui_MainWindow(object):
         self.frame_extra_menus.setFont(font2)
         self.frame_extra_menus.setStyleSheet(u"color:#c8c8c8")
         self.layout_menu_bottom = QVBoxLayout(self.frame_extra_menus)
-
         self.layout_menu_bottom.setSpacing(0)
         self.layout_menu_bottom.setObjectName(u"layout_menu_bottom")
         self.layout_menu_bottom.setContentsMargins(0, 0, 0, 0)
@@ -842,7 +841,7 @@ class Ui_MainWindow(object):
         self.label_name.setStyleSheet(u"color:#c8c8c8")
 
         self.verticalLayout_6.addWidget(self.label_name)
-        
+
         self.label_intro = QLabel(self.page_home)
         self.label_intro.setObjectName(u"label_intro")
         font4 = QFont()
@@ -859,20 +858,6 @@ class Ui_MainWindow(object):
         self.label_space.setObjectName(u"label_space")
 
         self.verticalLayout_6.addWidget(self.label_space)
-
-        self.label_first_time = QLabel(self.page_home)
-        self.label_first_time.setObjectName(u"label_first_time")
-        font4 = QFont()
-        font4.setFamily(u"Segoe UI")
-        font4.setPointSize(10)
-        font4.setWeight(75)
-        
-        self.label_first_time.setFont(font4)
-        self.label_first_time.setStyleSheet(u"color:#62676f;")
-        self.label_first_time.setAlignment(Qt.AlignRight | Qt.AlignTrailing | Qt.AlignVCenter)
-        self.label_first_time.setMaximumSize(QSize(120000, 30))
-
-        self.verticalLayout_6.addWidget(self.label_first_time)
 
         self.stackedWidget.addWidget(self.page_home)
         self.page_add = QWidget()
@@ -1113,62 +1098,62 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_9.addWidget(self.frame_search)
 
-#         self.scrollArea = QScrollArea(self.frame_list)
-#         self.scrollArea.setObjectName(u"scrollArea")
-#         self.scrollArea.setMinimumSize(QSize(400, 0))
-#         self.scrollArea.setMaximumSize(QSize(400, 16777215))
-#         self.scrollArea.setStyleSheet(u"QScrollArea {\n"
-# "	border-radius : 7px;\n"
-# "	border: 3px solid rgb(34, 36, 43);\n"
-# "    margin-top : 5px\n"
-# "}\n"
-# "QScrollBar:horizontal {\n"
-# "    border: none;\n"
-# "    background: rgb(52, 59, 72);\n"
-# "    height: 14px;\n"
-# "    margin: 0px 21px 0 21px;\n"
-# "	border-radius: 0px;\n"
-# "}\n"
-# " QScrollBar:vertical {\n"
-# "	border: none;\n"
-# "    background: rgb(52, 59, 72);\n"
-# "    width: 14px;\n"
-# "    margin: 21px 0 21px 0;\n"
-# "	border-radius: 0px;\n"
-# " }")
-#         self.scrollArea.setWidgetResizable(True)
-#         self.scrollAreaWidgetContents = QWidget()
-#         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-#         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 384, 542))
-#         self.verticalLayout_14 = QVBoxLayout(self.scrollAreaWidgetContents)
-#         self.verticalLayout_14.setSpacing(10)
-#         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-#         self.verticalLayout_14.setContentsMargins(9, 0, 0, 0)
-#         self.pushButton_example1 = QPushButton(self.scrollAreaWidgetContents)
-#         self.pushButton_example1.setObjectName(u"pushButton_example1")
-#         self.pushButton_example1.setMinimumSize(QSize(0, 80))
-#         self.pushButton_example1.setMaximumSize(QSize(16777215, 80))
-#         self.pushButton_example1.setFont(font8)
-#         self.pushButton_example1.setStyleSheet(u"QPushButton{\n"
-# "background-color : #32363e;\n"
-# "border-radius: 10px;\n"
-# "}\n"
-# "\n"
-# "QPushButton:hover {\n"
-# "	border: 2px solid #41454d;\n"
-# "}\n"
-# "QPushButton:pressed {	\n"
-# "	background-color: rgb(35, 40, 49); /* pressed button border = \ubc30\uacbd r+8 g+10 b+12 */\n"
-# "	border: 2px solid rgb(43, 50, 61);\n"
-# "}\n"
-# "\n"
-# "")
+        self.scrollArea = QScrollArea(self.frame_list)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setMinimumSize(QSize(400, 0))
+        self.scrollArea.setMaximumSize(QSize(400, 16777215))
+        self.scrollArea.setStyleSheet(u"QScrollArea {\n"
+"	border-radius : 7px;\n"
+"	border: 3px solid rgb(34, 36, 43);\n"
+"    margin-top : 5px\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(52, 59, 72);\n"
+"    height: 14px;\n"
+"    margin: 0px 21px 0 21px;\n"
+"	border-radius: 0px;\n"
+"}\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(52, 59, 72);\n"
+"    width: 14px;\n"
+"    margin: 21px 0 21px 0;\n"
+"	border-radius: 0px;\n"
+" }")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 384, 542))
+        self.verticalLayout_14 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_14.setSpacing(10)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(9, 0, 0, 0)
+        self.pushButton_example1 = QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_example1.setObjectName(u"pushButton_example1")
+        self.pushButton_example1.setMinimumSize(QSize(0, 80))
+        self.pushButton_example1.setMaximumSize(QSize(16777215, 80))
+        self.pushButton_example1.setFont(font8)
+        self.pushButton_example1.setStyleSheet(u"QPushButton{\n"
+"background-color : #32363e;\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	border: 2px solid #41454d;\n"
+"}\n"
+"QPushButton:pressed {	\n"
+"	background-color: rgb(35, 40, 49); /* pressed button border = \ubc30\uacbd r+8 g+10 b+12 */\n"
+"	border: 2px solid rgb(43, 50, 61);\n"
+"}\n"
+"\n"
+"")
 
-#         self.verticalLayout_14.addWidget(self.pushButton_example1)
+        self.verticalLayout_14.addWidget(self.pushButton_example1)
 
-#         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
-#         self.verticalLayout_9.addWidget(self.scrollArea)
+        self.verticalLayout_9.addWidget(self.scrollArea)
 
         self.horizontalLayout_8.addWidget(self.frame_list)
 
@@ -1251,13 +1236,13 @@ class Ui_MainWindow(object):
         font12.setBold(True)
         font12.setWeight(75)
         self.label_password_2.setFont(font12)
-        self.label_password_2.setStyleSheet(u"border-radius : 0; margin-right : 5px")
+        self.label_password_2.setStyleSheet(u"border-radius : 0;")
 
         self.gridLayout.addWidget(self.label_password_2, 6, 1, 1, 1)
 
         self.checkBox_retrieve_show = QCheckBox(self.frame_retrieve)
         self.checkBox_retrieve_show.setObjectName(u"checkBox_retrieve_show")
-        self.checkBox_retrieve_show.setMaximumSize(QSize(70, 30))
+        self.checkBox_retrieve_show.setMaximumSize(QSize(120, 30))
 
         self.gridLayout.addWidget(self.checkBox_retrieve_show, 6, 2, 1, 1)
 
@@ -1316,7 +1301,7 @@ class Ui_MainWindow(object):
         self.label_id_2 = QLabel(self.frame_retrieve)
         self.label_id_2.setObjectName(u"label_id_2")
         self.label_id_2.setFont(font12)
-        self.label_id_2.setStyleSheet(u"border-radius : 0;  margin-right : 5px;")
+        self.label_id_2.setStyleSheet(u"border-radius : 0;")
         self.label_id_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout.addWidget(self.label_id_2, 1, 1, 1, 1)
@@ -1508,38 +1493,7 @@ class Ui_MainWindow(object):
         icon4.addFile(u":/icons/icons/16x16/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_open_folder.setIcon(icon4)
 
-        self.gridLayout_4.addWidget(self.pushButton_open_folder, 1,1,1,1)
-
-
-        self.pushButton_restore = QPushButton(self.frame_assign)
-        self.pushButton_restore.setObjectName(u"pushButton_restore")
-        self.pushButton_restore.setMaximumSize(QSize(150, 30))
-        font17 = QFont()
-        font17.setFamily(u"Segoe UI")
-        font17.setPointSize(10)
-        self.pushButton_restore.setFont(font17)
-        self.pushButton_restore.setFocusPolicy(Qt.StrongFocus)
-        self.pushButton_restore.setStyleSheet(u"QPushButton {\n"
-"color:#c8c8c8;\n"
-"	border: 2px solid rgb(52, 59, 72);\n"
-"	border-radius: 5px;	\n"
-"	background-color: rgb(52, 59, 72);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	background-color: rgb(57, 65, 80);\n"
-"	border: 2px solid rgb(61, 70, 86);\n"
-"}\n"
-"QPushButton:pressed {	\n"
-"	background-color: rgb(35, 40, 49);\n"
-"	border: 2px solid rgb(43, 50, 61);\n"
-"}\n"
-"\n"
-"")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/16x16/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_restore.setIcon(icon4)
-
-        self.gridLayout_4.addWidget(self.pushButton_restore, 2, 1)
+        self.gridLayout_4.addWidget(self.pushButton_open_folder, 1, 1, 1, 1)
 
         self.label_assign = QLabel(self.frame_assign)
         self.label_assign.setObjectName(u"label_assign")
@@ -1810,7 +1764,6 @@ class Ui_MainWindow(object):
         self.label_name.setText(QCoreApplication.translate("MainWindow", u"AccountBox", None))
         self.label_intro.setText(QCoreApplication.translate("MainWindow", u"Manage your account datas more comfortable,\n"
 "retrieve them with no anxiety of exposure", None))
-        self.label_first_time.setText(QCoreApplication.translate("MainWindow", u"At first, press 'restore' button at Setting", None))
         self.label_space.setText("")
         self.label_add_password.setText(QCoreApplication.translate("MainWindow", u"Password", None))
         self.lineEdit_add_name.setText("")
@@ -1831,11 +1784,7 @@ class Ui_MainWindow(object):
         self.pushButton_search.setToolTip(QCoreApplication.translate("MainWindow", u"search", None))
 #endif // QT_CONFIG(tooltip)
         self.pushButton_search.setText("")
-
-
-#        self.pushButton_example1.setText(QCoreApplication.translate("MainWindow", u"Facebook", None))
-
-
+        self.pushButton_example1.setText(QCoreApplication.translate("MainWindow", u"Facebook", None))
         self.label_guide.setText(QCoreApplication.translate("MainWindow", u"Search services you want\n"
 "and click it to retrieve!", None))
         self.label_service_name.setText(QCoreApplication.translate("MainWindow", u"Servicename", None))
@@ -1847,7 +1796,7 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(tooltip)
         self.checkBox_retrieve_show.setToolTip(QCoreApplication.translate("MainWindow", u"have a look around before click this", None))
 #endif // QT_CONFIG(tooltip)
-        self.checkBox_retrieve_show.setText(QCoreApplication.translate("MainWindow", u"Show", None))
+        self.checkBox_retrieve_show.setText(QCoreApplication.translate("MainWindow", u"Show password", None))
         self.pushButton_clipboard_id.setText(QCoreApplication.translate("MainWindow", u"copy to\n"
 "clipboard", None))
         self.label_clipboard_id.setText("")
@@ -1859,7 +1808,7 @@ class Ui_MainWindow(object):
         self.label_clipboard_password.setText("")
         self.label_edit_guide.setText(QCoreApplication.translate("MainWindow", u"You can edit ID and Password below", None))
 #if QT_CONFIG(tooltip)
-        self.frame_edit.setToolTip(QCoreApplication.translate("MainWindow", u"", None))
+        self.frame_edit.setToolTip(QCoreApplication.translate("MainWindow", u"you better not to click this at public places", None))
 #endif // QT_CONFIG(tooltip)
         self.lineEdit_edit_id.setText("")
         self.lineEdit_edit_id.setPlaceholderText(QCoreApplication.translate("MainWindow", u"New ID", None))
@@ -1874,7 +1823,6 @@ class Ui_MainWindow(object):
         self.pushButton_edit_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.label_current.setText(QCoreApplication.translate("MainWindow", u"Current : C:\\Users\\bolt6281\\programming\\Python\\SoloProjects\\AccountBox\\account_data.json", None))
         self.pushButton_open_folder.setText(QCoreApplication.translate("MainWindow", u"Open Folder", None))
-        self.pushButton_restore.setText(QCoreApplication.translate("MainWindow", u"Restore", None))
         self.label_assign.setText(QCoreApplication.translate("MainWindow", u"ASSIGN ACCOUNT FILE", None))
         self.label_nothing_more.setText(QCoreApplication.translate("MainWindow", u"Nothing more yet", None))
 #if QT_CONFIG(tooltip)
