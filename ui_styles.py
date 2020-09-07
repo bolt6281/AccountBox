@@ -58,20 +58,21 @@ class Style():
         border-radius : 7px;
         border: 3px solid rgb(34, 36, 43);
         margin-top : 5px
-    }
-        QScrollBar:horizontal {
+        }
+    QScrollBar:horizontal {
         border: none;
         background: rgb(52, 59, 72);
-        height: 14px;
+        height: 14px;   
         margin: 0px 21px 0 21px;
         border-radius: 0px;
-}
+        }
     QScrollBar:vertical {
         border: none;
         background: rgb(52, 59, 72);
         width: 14px;
         margin: 21px 0 21px 0;
-        border-radius: 0px; }
+        border-radius: 0px;
+        }
     '''
     )
 
@@ -89,4 +90,44 @@ class Style():
         border: 2px solid rgb(43, 50, 61);
     }
 '''
+    )
+
+    style_line_edit = (
+        '''
+        QLineEdit {
+            margin-left:20px;
+            margin-right:20px;
+            background-color: rgb(27, 29, 35);
+            border-radius: 3px;
+            border: 2px solid rgb(34, 36, 43);
+            padding-left: 10px;
+            font-size : 15px;
+            color:#c8c8c8;
+        }
+        QLineEdit:hover {
+        	border: 2px solid rgb(64, 71, 88);
+        }
+        QLineEdit:focus {
+        	border: 2px solid rgb(91, 101, 124);
+        }
+        '''
+    )
+    style_qmsgbox = ('''
+        QMessageBox{
+            color: #2c313c;
+
+            QPushButton{
+            background-color : #32363e;
+            border-radius: 10px;
+            }
+            QPushButton:hover {
+                border: 2px solid #41454d;
+            }
+            QPushButton:pressed {	
+                background-color: rgb(35, 40, 49);
+                border: 2px solid rgb(43, 50, 61);
+            }
+
+        }
+        '''
     )

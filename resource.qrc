@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="icons">
-    <file>icons/16x16/favicon (1).ico</file>
+    <file>icons/16x16/cil-tags.png</file>
     <file>icons/24x24/cil-menu.png</file>
     <file>icons/16x16/cil-check-alt.png</file>
     <file>icons/16x16/cil-folder-open.png</file>
